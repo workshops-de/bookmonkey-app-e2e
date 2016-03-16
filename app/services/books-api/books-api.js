@@ -2,7 +2,7 @@
 
 angular.module('myApp.booksApi', [])
   .service('booksApi', function ($http) {
-    var baseUrl = 'http://bookmonkey-api.angularjs.de/books'
+    var baseUrl = 'http://localhost:4730/books'
 
     function loadAll () {
       return $http.get(baseUrl)

@@ -8,13 +8,13 @@
   "main": "app/app.ts",
   "scripts": {
     "test": "karma start",
-    "start": "node node_modules/bookmonkey-api/server.js & live-server --port=3000"
+    "start": "bookmonkey-api & live-server --port=3000"
   },
   "author": "Elmar Burke <elmar.burke@symetics.com>",
   "dependencies": {
     "angular": "^1.5.0",
     "angular-route": "^1.5.0",
-    "bookmonkey-api": "^1.1.0",
+    "bookmonkey-api": "^1.2.0",
     "jquery": "^2.2.0",
     "semantic-ui-css": "^2.1.8"
   },
