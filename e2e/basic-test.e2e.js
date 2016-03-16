@@ -1,4 +1,4 @@
-var Navigation = require('./navigation.po.ts');
+var Navigation = require('./navigation.po');
 
 describe('when the user Teddy B is created', function(){
 
