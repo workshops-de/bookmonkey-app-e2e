@@ -2,6 +2,7 @@
 
 angular.module('myApp', [
   'ngRoute',
+  'ngMessages',
   'myApp.routes',
   'myApp.navigation',
   'myApp.books-index',

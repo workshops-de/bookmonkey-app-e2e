@@ -13,6 +13,7 @@
   "author": "Elmar Burke <elmar.burke@symetics.com>",
   "dependencies": {
     "angular": "^1.5.0",
+    "angular-messages": "^1.5.0",
     "angular-route": "^1.5.0",
     "bookmonkey-api": "^1.2.0",
     "jquery": "^2.2.0",
