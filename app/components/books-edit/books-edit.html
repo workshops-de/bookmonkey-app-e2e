@@ -1,0 +1,31 @@
+<form class="ui form" name="$ctrl.bookForm" ng-submit="$ctrl.handleSubmit($ctrl.book)" novalidate>
+  <div class="field">
+    <label>Title</label>
+    <input type="text" name="title" placeholder="Title" ng-model="$ctrl.book.title" required minlength="5" maxlength="50">
+    <div class="ui message"
+         ng-if="$ctrl.bookForm.title.$touched && $ctrl.bookForm.title.$invalid"
+         ng-messages="$ctrl.bookForm.title.$error">
+      <div class="header">
+        The field title is invalid
+      </div>
+      <p ng-message="required">This field is required</p>
+      <p ng-message="minlength">Enter at least 5 characters</p>
+      <p ng-message="maxlength">Enter at most 50 characters</p>
+    </div>
+  </div>
+  <div class="field">
+    <label>Subtitle</label>
+    <input type="text" name="subtitle" placeholder="Subtitle" ng-model="$ctrl.book.subtitle">
+  </div>
+  <div class="field">
+    <label>Author's name</label>
+    <input type="text" name="author" placeholder="Author's name" ng-model="$ctrl.book.author">
+  </div>
+  
+  <div class="field">
+    <label>Abstract</label>
+    <textarea name="author" placeholder="Abstract" ng-model="$ctrl.book.abstract"></textarea>
+  </div>
+ 
+  <button class="ui button" ng-disabled="$ctrl.book.$invalid">Submit</button>
+</form>

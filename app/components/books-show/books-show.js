@@ -1,7 +1,7 @@
 'use strict'
 
 function booksShow (booksApi, $routeParams) {
-  booksApi.loadAll($routeParams.isbn)
+  booksApi.loadByIsbn($routeParams.isbn)
     .then(function (book) {
       this.book = book
     }.bind(this))

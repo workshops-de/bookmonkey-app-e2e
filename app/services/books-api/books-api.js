@@ -14,8 +14,14 @@ angular.module('myApp.booksApi', [])
         .then(function (bookResponse) { return bookResponse.data })
     }
 
+    function save (book) {
+      return $http.put(baseUrl + '/' + book.isbn, book)
+        .then(function (resultRespnse) { return resultRespnse.data })
+    }
+
     return {
       loadAll: loadAll,
-      loadByIsbn: loadByIsbn
+      loadByIsbn: loadByIsbn,
+      save: save
     }
   })

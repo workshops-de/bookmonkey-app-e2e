@@ -12,6 +12,9 @@ angular.module('myApp.routes', [])
       .when('/books/:isbn', {
         template: '<books-show></books-show>'
       })
+      .when('/books/:isbn/edit', {
+        template: '<books-edit></books-edit>'
+      })
       .when('/login', {
         template: '<login></login>'
       })
