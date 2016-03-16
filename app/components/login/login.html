@@ -1,0 +1,46 @@
+<div class="ui middle aligned center aligned grid">
+  <div class="column">
+    <h2 class="ui teal header">
+      <div class="content">
+        Log-in to your account
+      </div>
+    </h2>
+    <form class="ui large form"
+          ng-class="{error: $ctrl.error}"
+          ng-submit="$ctrl.login($ctrl.email, $ctrl.password)">
+      <div class="ui stacked segment">
+        <div class="field">
+          <div class="ui left icon input">
+            <i class="user icon"></i>
+            <input type="email"
+                   name="email"
+                   placeholder="E-mail address"
+                   ng-model="$ctrl.email"
+                   required>
+          </div>
+        </div>
+        <div class="field">
+          <div class="ui left icon input">
+            <i class="lock icon"></i>
+            <input type="password"
+                   name="password"
+                   placeholder="Password"
+                   ng-model="$ctrl.password"
+                   required>
+          </div>
+        </div>
+        <button class="ui fluid large teal submit button">Login</button>
+        
+        <div ng-if="$ctrl.error" class="ui error message">
+          <div class="header">Not siggend in</div>
+          <p>{{$ctrl.error}}</p>
+        </div>
+      </div>
+
+    </form>
+
+    <div class="ui message">
+      New to us? <a href="#">Sign Up</a>
+    </div>
+  </div>
+</div>

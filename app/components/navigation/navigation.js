@@ -1,6 +1,9 @@
 'use strict'
 
-function navigation ($location) {
+function navigation ($location, session) {
+  this.isLoggedIn = session.isLoggedIn
+  this.logout = session.logout
+
   this.isActive = function (route) {
     var routeExp = new RegExp(route)
     return routeExp.test($location.path())

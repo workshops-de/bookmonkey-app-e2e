@@ -13,7 +13,7 @@ angular.module('myApp.booksApi', [])
       return $http.get(baseUrl + '/' + isbn)
         .then(function (bookResponse) { return bookResponse.data })
     }
-    
+
     return {
       loadAll: loadAll,
       loadByIsbn: loadByIsbn

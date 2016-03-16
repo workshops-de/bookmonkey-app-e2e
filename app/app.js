@@ -5,5 +5,8 @@ angular.module('myApp', [
   'myApp.routes',
   'myApp.navigation',
   'myApp.books-index',
-  'myApp.books-show'
+  'myApp.books-show',
+  'myApp.login',
+  'myApp.session',
+  'myApp.dashboard'
 ])
