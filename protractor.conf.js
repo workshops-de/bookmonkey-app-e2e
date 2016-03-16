@@ -18,5 +18,12 @@ exports.config = {
   },
   onPrepare: function() {
     jasmine.getEnv().addReporter(new SpecReporter());
+  },
+  params: {
+    login: {
+      email: 'robin@me.com',
+      password: 'robin'
+    }
   }
+
 };
