@@ -19,9 +19,15 @@ angular.module('myApp.booksApi', [])
         .then(function (resultRespnse) { return resultRespnse.data })
     }
 
+    function create (book) {
+      return $http.post(baseUrl + '/', book)
+        .then(function (resultRespnse) { return resultRespnse.data })
+    }
+
     return {
       loadAll: loadAll,
       loadByIsbn: loadByIsbn,
-      save: save
+      save: save,
+      create: create
     }
   })

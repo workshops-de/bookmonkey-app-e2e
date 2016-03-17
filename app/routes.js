@@ -9,6 +9,9 @@ angular.module('myApp.routes', [])
       .when('/books', {
         template: '<books-index></books-index>'
       })
+      .when('/books/create', {
+        template: '<books-create></books-create>'
+      })
       .when('/books/:isbn', {
         template: '<books-show></books-show>'
       })
