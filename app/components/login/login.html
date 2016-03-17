@@ -56,6 +56,12 @@
         
         <button class="ui fluid large teal submit button"
                 ng-disabled="$ctrl.loginForm.$invalid">Login</button>
+
+        <p>
+          The login checks the following rule:<br>
+          <code>email.split('@')[0] === password</code><br>
+          So, while <i>john@doe.com</i> is the email, <i>john</i> is the password
+        </p>
         
       </div>
 
