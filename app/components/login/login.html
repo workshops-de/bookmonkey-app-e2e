@@ -11,7 +11,7 @@
           ng-submit="$ctrl.login($ctrl.email, $ctrl.password)"
           novalidate>
       <div class="ui stacked segment">
-        <div class="field" ng-class="{error: $ctrl.loginForm.email.$pristine && $ctrl.loginForm.email.$invalid}">
+        <div class="field" ng-class="{error: !$ctrl.loginForm.email.$pristine && $ctrl.loginForm.email.$invalid}">
           <div class="ui left icon input">
             <i class="user icon"></i>
             <input type="email"
@@ -22,7 +22,7 @@
                    minlength="5">
           </div>
         
-          <div class="ui message" ng-if="$ctrl.loginForm.email.$pristine && $ctrl.loginForm.email.$invalid">
+          <div class="ui message" ng-if="!$ctrl.loginForm.email.$pristine && $ctrl.loginForm.email.$invalid">
             <div class="header">The field email is invalid</div>
             <ul class="list" ng-messages="$ctrl.loginForm.email.$error">
               <li ng-message="email">Please enter a valid email address</li>
@@ -31,7 +31,7 @@
             </ul>
           </div>
         </div>
-        <div class="field" ng-class="{error: $ctrl.loginForm.password.$pristine && $ctrl.loginForm.password.$invalid}">
+        <div class="field" ng-class="{error: !$ctrl.loginForm.password.$pristine && $ctrl.loginForm.password.$invalid}">
           <div class="ui left icon input">
             <i class="lock icon"></i>
             <input type="password"
@@ -40,7 +40,7 @@
                    ng-model="$ctrl.password"
                    required>
           </div>
-          <div class="ui message" ng-if="$ctrl.loginForm.password.$pristine && $ctrl.loginForm.password.$invalid">
+          <div class="ui message" ng-if="!$ctrl.loginForm.password.$pristine && $ctrl.loginForm.password.$invalid">
             <div class="header">The field password is invalid</div>
             <ul class="list" ng-messages="$ctrl.loginForm.password.$error">
               <li ng-message="required">To log you in it's required to enter a password address</li>
