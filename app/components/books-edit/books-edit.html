@@ -3,7 +3,7 @@
     <label>Title</label>
     <input type="text" name="title" placeholder="Title" ng-model="$ctrl.book.title" required minlength="5" maxlength="50">
     <div class="ui message"
-         ng-if="$ctrl.bookForm.title.$touched && $ctrl.bookForm.title.$invalid"
+         ng-if="$ctrl.bookForm.title.$pristine && $ctrl.bookForm.title.$invalid"
          ng-messages="$ctrl.bookForm.title.$error">
       <div class="header">
         The field title is invalid

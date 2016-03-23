@@ -1,13 +1,13 @@
-<div class="ui pointing menu">
+<div class="ui pointing menu" data-test="nav">
   <div class="header item">
     BookMonkey
   </div>
   
-  <a class="item" ng-class="{active: $ctrl.isActive('^/$')}" href="#/">
+  <a class="item" data-test="nav.home" ng-class="{active: $ctrl.isActive('^/$')}" href="#/">
     Home
   </a>
   
-  <a class="item" ng-class="{active: $ctrl.isActive('^/books')}" href="#/books">
+  <a class="item" data-test="nav.books" ng-class="{active: $ctrl.isActive('^/books')}" href="#/books">
     Books
   </a>
   
