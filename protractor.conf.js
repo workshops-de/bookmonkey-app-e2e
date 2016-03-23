@@ -18,7 +18,18 @@ exports.config = {
     }
   },
   onPrepare         : function () {
+    var reporters = require('jasmine-reporters');
+
+    jasmine.getEnv().addReporter(new reporters.JUnitXmlReporter({
+      savePath: 'xmloutput',
+      consolidateAll: true
+    }));
+
     jasmine.getEnv().addReporter(new SpecReporter());
+  },
+
+  params: {
+    email: 'robin@a.com'
   }
 
   };

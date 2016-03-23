@@ -5,7 +5,7 @@
       <i class="search link icon"></i>
     </div>
   </div>
-  <div class="item" ng-repeat="book in $ctrl.books | filter:$ctrl.search">
+  <div class="item" data-test="book.list" ng-repeat="book in $ctrl.books | filter:$ctrl.search">
     <i class="large book middle aligned icon"></i>
     <div class="content">
       <a class="header" href="#/books/{{book.isbn}}">{{book.title}}</a>

@@ -17,6 +17,7 @@
             <input type="email"
                    name="email"
                    placeholder="E-mail address"
+                   data-test="login.email"
                    ng-model="$ctrl.email"
                    required
                    minlength="5">
@@ -37,6 +38,7 @@
             <input type="password"
                    name="password"
                    placeholder="Password"
+                   data-test="login.password"
                    ng-model="$ctrl.password"
                    required>
           </div>
@@ -54,7 +56,7 @@
         </div>
         
         
-        <button class="ui fluid large teal submit button"
+        <button class="ui fluid large teal submit button" data-test="login.submit"
                 ng-disabled="$ctrl.loginForm.$invalid">Login</button>
 
         <p>

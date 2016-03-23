@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="Books" timestamp="2016-03-23T21:35:03" hostname="localhost" time="0.654" errors="0" tests="1" skipped="0" disabled="0" failures="0">
+  <testcase classname="Books" name="should show all books" time="0.652" />
+ </testsuite>
+ <testsuite name="hello page" timestamp="2016-03-23T21:35:04" hostname="localhost" time="0.864" errors="0" tests="2" skipped="0" disabled="0" failures="0">
+  <testcase classname="hello page" name="should set the correct text to h1" time="0.488" />
+  <testcase classname="hello page" name="should also work with model and bindings" time="0.376" />
+ </testsuite>
+ <testsuite name="Books" timestamp="2016-03-23T21:35:04" hostname="localhost" time="0.583" errors="0" tests="1" skipped="0" disabled="0" failures="0">
+  <testcase classname="Books" name="should login with params" time="0.583" />
+ </testsuite>
+</testsuites>

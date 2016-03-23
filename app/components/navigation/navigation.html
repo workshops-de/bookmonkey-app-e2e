@@ -12,10 +12,10 @@
   </a>
   
   <div class="right menu">
-    <a class="item" ng-if="!$ctrl.isLoggedIn()" ng-class="{active: $ctrl.isActive('^/login')}" href="#/login">
+    <a class="item" data-test="nav.login" ng-if="!$ctrl.isLoggedIn()" ng-class="{active: $ctrl.isActive('^/login')}" href="#/login">
       Login
     </a>
-    <a class="item" ng-if="$ctrl.isLoggedIn()" ng-class="{active: $ctrl.isActive('^/login')}" ng-click="$ctrl.logout()">
+    <a class="item" data-test="nav.logout" ng-if="$ctrl.isLoggedIn()" ng-class="{active: $ctrl.isActive('^/login')}" ng-click="$ctrl.logout()">
       Logout
     </a>
   </div>
