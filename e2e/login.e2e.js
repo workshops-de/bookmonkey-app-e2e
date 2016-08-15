@@ -17,6 +17,8 @@ describe('Books', function(){
     loginPage.password.sendKeys(browser.params.password);
     loginPage.submitForm();
 
+    browser.pause();
+
     expect(browser.getLocationAbsUrl()).toBe('/dashboard')
   });
 
