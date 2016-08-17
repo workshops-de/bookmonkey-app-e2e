@@ -1,10 +1,15 @@
-var Navigation = require('./navigation.po');
-var BooksPage = require('./books.po');
+import {browser, element, by, By, $, $$, ExpectedConditions} from 'protractor/globals';
+
+import {Navigation} from './navigation.po';
+import {Books} from './books.po';
+
+//var Navigation = require('./navigation.po');
+//var BooksPage = require('./books.po');
 
 describe('Books', function () {
 
   var navigation = new Navigation();
-  var booksPage = new BooksPage();
+  var booksPage = new Books();
 
   beforeEach(function () {
     browser.get('#/');

@@ -1,5 +1,9 @@
-var Navigation = require('./navigation.po');
-var LoginPage = require('./login.po');
+import {Navigation} from './navigation.po';
+import {LoginPage} from './login.po';
+
+//var Navigation = require('./navigation.po');
+//var LoginPage = require('./login.po');
+import {browser, element, by, By, $, $$, ExpectedConditions} from 'protractor/globals';
 
 describe('Books', function(){
 
@@ -17,7 +21,7 @@ describe('Books', function(){
     loginPage.password.sendKeys(browser.params.password);
     loginPage.submitForm();
 
-    browser.pause();
+    //browser.pause();
 
     expect(browser.getLocationAbsUrl()).toBe('/dashboard')
   });

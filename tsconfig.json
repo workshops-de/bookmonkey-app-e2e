@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "sourceMap": false,
+    "declaration": false,
+    "noImplicitAny": false,
+    "outDir": "tmp"
+  },
+  "exclude": [
+    "node_modules",
+    "typings/globals",
+    "asyncAwait",
+    "plugins.ts"
+  ]
+}

@@ -7,10 +7,12 @@
   },
   "main": "app/app.ts",
   "scripts": {
-    "test": "karma start",
     "start": "bookmonkey-api & live-server --port=3000",
-    "e2e": "protractor",
-    "pre-e2e": "webdriver-manager update"
+    "tsc": "tsc",
+    "typings": "typings install",
+    "postinstall": "typings install;./node_modules/protractor/bin/webdriver-manager update",
+    "pretest": "tsc",
+    "test": "protractor tmp/protractor.conf.js"
   },
   "author": "Robin Böhm <robin.boehm@symetics.com>",
   "dependencies": {
@@ -24,7 +26,10 @@
   "devDependencies": {
     "jasmine-core": "^2.3.4",
     "jasmine-spec-reporter": "^2.4.0",
-    "live-server": "^0.9.1"
+    "live-server": "^0.9.1",
+    "protractor": "^4.0.3",
+    "typescript": "^1.8.10",
+    "typings": "^1.3.2"
   },
   "standard": {
     "globals": [

@@ -1,6 +1,6 @@
 {
-  "ambientDevDependencies": {
-    "angular-protractor": "registry:dt/angular-protractor#1.5.0+20160127022504",
-    "jasmine": "registry:dt/jasmine#2.2.0+20160308082659"
+  "globalDependencies": {
+    "jasmine": "registry:dt/jasmine#2.2.0+20160412134438",
+    "node": "registry:dt/node#4.0.0+20160423143914"
   }
 }
