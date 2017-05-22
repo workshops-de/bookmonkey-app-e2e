@@ -1,3 +1,8 @@
-# Workshop Seed für unseren E2E (End to End) Testing Kurs
+# Workshop Web-App für unsere Backend Kurse
 
-Ihr könnt dieses Projekt als Ausgangspunkt für unsere Übungen innerhalb unseres [Angular2 TypeScript Workshops](https://angularjs.de/workshops/angular2-intensiv) nutzen
+Ihr könnt dieses Projekt nutzen, um eure Rest-APIs in unseren Kursen zu testen.
+
+- [GoLang Intensiv Workshop](https://workshops.de/seminare-schulungen-kurse/golang)
+- [Spring Boot Intensiv Workshop](https://workshops.de/seminare-schulungen-kurse/spring-boot-cloud)
+- [Elixir Phoenix Intensiv Workshop](https://workshops.de/seminare-schulungen-kurse/phoenix-elixir)
+

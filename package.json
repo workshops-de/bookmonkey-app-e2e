@@ -1,35 +1,22 @@
 {
-  "name": "angularjs-typescript-seed",
+  "name": "bookmonkey-web",
   "version": "1.0.0",
   "repository": {
     "type": "git",
-    "url": "git@github.com:angularjs-de/bookmonkey-app-e2e.git"
+    "url": "git@github.com:workshops-de/workshops-web.git"
   },
   "main": "app/app.ts",
   "scripts": {
-    "start": "bookmonkey-api & live-server --port=3000",
-    "tsc": "tsc",
-    "typings": "typings install",
-    "postinstall": "typings install;./node_modules/protractor/bin/webdriver-manager update",
-    "pretest": "tsc",
-    "test": "protractor tmp/protractor.conf.js"
+    "start": "bookmonkey-api & live-server --port=3000"
   },
-  "author": "Robin Böhm <robin.boehm@symetics.com>",
+  "author": "Robin Böhm <robin.boehm@workshops.de>",
   "dependencies": {
-    "angular": "^1.5.0",
-    "angular-messages": "^1.5.0",
-    "angular-route": "^1.5.0",
+    "angular": "1.5.*",
+    "angular-messages": "1.5.*",
+    "angular-route": "1.5.*",
     "bookmonkey-api": "^1.2.0",
     "jquery": "^2.2.0",
     "semantic-ui-css": "^2.1.8"
-  },
-  "devDependencies": {
-    "jasmine-core": "^2.3.4",
-    "jasmine-spec-reporter": "^2.4.0",
-    "live-server": "^0.9.1",
-    "protractor": "^4.0.3",
-    "typescript": "^1.8.10",
-    "typings": "^1.3.2"
   },
   "standard": {
     "globals": [
